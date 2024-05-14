@@ -20,6 +20,9 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	runtimeOnly 'io.micrometer:micrometer-registry-otlp'
+
+	runtimeOnly 'io.micrometer:micrometer-tracing-bridge-otel'
+	runtimeOnly 'io.opentelemetry:opentelemetry-exporter-otlp'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
